@@ -12,6 +12,7 @@ Para rodar o JMeter, é necessário ter o **Java** instalado. Faça o download d
 ## Site de Teste
 
 Este projeto realiza requisições de teste para o site de e-commerce simulado [Automation Practice](http://www.automationpractice.pl/index.php), que simula um ambiente de loja de roupas online.
+
 ---
 
 ## Cenários de Teste
