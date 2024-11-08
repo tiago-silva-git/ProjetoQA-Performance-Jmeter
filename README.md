@@ -12,6 +12,7 @@ Para rodar o JMeter, é necessário ter o **Java** instalado. Faça o download d
 ## Site de Teste
 
 Este projeto realiza requisições de teste para o site de e-commerce simulado [Automation Practice](http://www.automationpractice.pl/index.php), que simula um ambiente de loja de roupas online.
+---
 
 ## Cenários de Teste
 
@@ -40,20 +41,13 @@ Este projeto contempla três cenários principais de teste de usuários:
     - Etapa 4 da compra: finalizar compra
     - Visualizar ordem de compra
 
-## Estrutura do Projeto
+## Execução dos Testes e Geração de Dashboards
 
-A estrutura de arquivos e pastas do projeto foi organizada para facilitar a criação, execução e análise dos testes:
-
-- `/test-plans/` - Contém os planos de teste configurados no JMeter para cada cenário de usuário.
-- `/results/` - Armazena os relatórios e logs gerados após cada execução de teste, para análise de desempenho.
-- `/scripts/` - Scripts auxiliares para automação de tarefas, como iniciar testes em lote.
-- `/reports/` - Resultados exportados em formato gráfico e tabelas para uma visão clara do desempenho e possíveis gargalos.
-
-## Execução dos Testes
-
-1. Abra o JMeter e importe o plano de teste correspondente (arquivo `.jmx`) localizado na pasta `/test-plans/`.
+1. Abra o JMeter e importe o plano de teste.
 2. Execute o plano e monitore os gráficos e resultados em tempo real ou exporte os dados ao final.
-3. Verifique os logs gerados na pasta `/results/` para análise detalhada.
+3. Execute por linha de comando dentro da pasta do projeto: 
+   - `C:\{caminho dos arquivos Jmeter}\bin\jmeter.bat -n -t eCommerce.jmx -l resultado.csv -e -o eCommerceDashboard`
+4. Verifique os resultados gerados na pasta `eCommerceDashboard` para análise detalhada.
 
 ## Análise dos Resultados
 
